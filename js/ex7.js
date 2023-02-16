@@ -1,5 +1,5 @@
 let tries = 0;
-const NBR = 50;
+const NBR = Math.floor(Math.random() * 100) + 1;
 
 function checkNumber(nbr, show = false) {
   const formResult = document.getElementById("form-result");

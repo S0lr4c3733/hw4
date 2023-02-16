@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
-    <div>
+    <div class="main-container-dev">
       <h1><a href="../index.html">Link to Start Page</a></h1>
       <h2>Frangeard's Exercise 1</h2>
       <h3>View console to see JavaScript Output</h3>
       <form id="form-1" onsubmit="submitForm(event)">
-        <div>
+        <div class="form-box">
           <label>Number 1</label>
           <input type="number" name="nbr-1" required autocomplete="off" />
         </div>
-        <label>Operation</label>
-        <div>
+        <div class="form-box">
+          <label>Operation</label>
           <select name="operation">
             <option value="+">+</option>
             <option value="-">-</option>
@@ -25,15 +25,15 @@
             <option value="/">/</option>
           </select>
         </div>
-        <div>
+        <div class="form-box">
           <label>Number 2</label>
           <input type="number" name="nbr-2" required autocomplete="off" />
         </div>
-        <div><button>calculate</button></div>
+        <button>calculate</button>
       </form>
       <p id="form-result"></p>
+      <button onclick="startPrompt()">Use Prompt</button>
     </div>
-    <button onclick="startPrompt()">Use Prompt</button>
     <script src="../js/ex1.js"></script>
   </body>
 </html>

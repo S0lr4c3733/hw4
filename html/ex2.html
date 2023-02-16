@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
-    <div>
+    <div class="main-container-dev">
       <h1><a href="../index.html">Link to Start Page</a></h1>
       <h2>Frangeard's Exercise 2</h2>
       <h3>View console to see JavaScript Output</h3>
       <form id="form-2" onsubmit="submitForm(event)">
-        <div>
+        <div class="form-box">
           <label>1 - Fahrenheit temperature</label>
           <input
             type="number"
@@ -22,7 +22,7 @@
             autocomplete="off"
           />
         </div>
-        <div>
+        <div class="form-box">
           <label>2 - Fahrenheit temperature</label>
           <input
             type="number"
@@ -32,7 +32,7 @@
             autocomplete="off"
           />
         </div>
-        <div>
+        <div class="form-box">
           <label>3 - Fahrenheit temperature</label>
           <input
             type="number"
@@ -42,17 +42,15 @@
             autocomplete="off"
           />
         </div>
-        <div>
-          <button>convert</button>
-        </div>
+        <button>convert</button>
       </form>
       <div>
         <p id="form-result-1"></p>
         <p id="form-result-2"></p>
         <p id="form-result-3"></p>
       </div>
+      <button onclick="startPrompt()">Use Prompt</button>
     </div>
-    <button onclick="startPrompt()">Use Prompt</button>
     <script src="../js/ex2.js"></script>
   </body>
 </html>
