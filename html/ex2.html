@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frangeard's Exercise 2</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div>
+      <h1><a href="../index.html">Link to Start Page</a></h1>
+      <h2>Frangeard's Exercise 2</h2>
+      <h3>View console to see JavaScript Output</h3>
+      <form id="form-2" onsubmit="submitForm(event)">
+        <div>
+          <label>1 - Fahrenheit temperature</label>
+          <input
+            type="number"
+            step="0.01"
+            name="nbr-1"
+            required
+            autocomplete="off"
+          />
+        </div>
+        <div>
+          <label>2 - Fahrenheit temperature</label>
+          <input
+            type="number"
+            step="0.01"
+            name="nbr-2"
+            required
+            autocomplete="off"
+          />
+        </div>
+        <div>
+          <label>3 - Fahrenheit temperature</label>
+          <input
+            type="number"
+            step="0.01"
+            name="nbr-3"
+            required
+            autocomplete="off"
+          />
+        </div>
+        <div>
+          <button>convert</button>
+        </div>
+      </form>
+      <div>
+        <p id="form-result-1"></p>
+        <p id="form-result-2"></p>
+        <p id="form-result-3"></p>
+      </div>
+    </div>
+    <button onclick="startPrompt()">Use Prompt</button>
+    <script src="../js/ex2.js"></script>
+  </body>
+</html>
